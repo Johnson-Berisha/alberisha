@@ -58,3 +58,5 @@ var slideBottom = {
   ScrollReveal().reveal('.aboutphoto', slideBottom);
   ScrollReveal().reveal('.abouttext', slide3);
   ScrollReveal().reveal('.servicecardinfo', slide3);
+  ScrollReveal().reveal('.statcards', slideBottom);
+  ScrollReveal().reveal('.stattext', slide3);

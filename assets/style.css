@@ -334,6 +334,12 @@ img.small{
     align-items: center;
 }
 
+.statcards {
+    position: relative;
+    height: 100%;
+    width: 70%;
+}
+
 .statcard {
     position: relative;
     display: flex;
@@ -373,6 +379,10 @@ font-family: Work Sans;
 font-style: normal;
 font-weight: 600;
 line-height: normal; 
+}
+
+.stattext {
+    width: 30%;
 }
 
 .stattitle {

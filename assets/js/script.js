@@ -60,3 +60,130 @@ var slideBottom = {
   ScrollReveal().reveal('.servicecardinfo', slide3);
   ScrollReveal().reveal('.statcards', slideBottom);
   ScrollReveal().reveal('.stattext', slide3);
+
+
+  // projects
+
+  let activeIndex = 0;
+
+const groups = document.getElementsByClassName("page");
+
+
+
+const goNext = () => {
+  const nextIndex = activeIndex + 1 <= groups.length - 1 ? activeIndex + 1 : 0;
+  
+  const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
+        nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
+        
+  currentGroup.dataset.status = "after";
+  
+  nextGroup.dataset.status = "becoming-active-from-before";
+  
+  setTimeout(() => {
+    nextGroup.dataset.status = "active";
+    activeIndex = nextIndex;
+  });
+
+}
+
+
+
+const goBack = () => {
+  const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : groups.length - 1;
+  
+  const currentGroup = document.querySelector(`[data-index="${activeIndex}"]`),
+        nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
+  
+  currentGroup.dataset.status = "before";
+  
+  nextGroup.dataset.status = "becoming-active-from-after";
+  
+  setTimeout(() => {
+    nextGroup.dataset.status = "active";
+    activeIndex = nextIndex;
+  });
+
+
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("page");
+  let dots = document.getElementsByClassName("dot");
+  // if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  dots[slideIndex-1].className += " active";
+}
+
+// slider
+
+class Slider {
+  constructor(options) {
+    this.sections = document.querySelectorAll(options.section);
+    this.navigation = document.querySelector(options.dots);
+
+    this.navigation.addEventListener('click', this.scrollToSection.bind(this));
+    window.addEventListener('scroll', this.setDotStatus.bind(this));
+  }
+
+  removeDotStyles() {
+    const dots = this.navigation;
+    const is_active = dots.querySelector('.is-active');
+
+    if (is_active != null) {
+      is_active.classList.remove('is-active');
+    }
+  }
+
+  setDotStatus() {
+    const scroll_position = window.scrollY;
+    const dots = Array.from(this.navigation.children);
+
+    this.sections.forEach((section, index) => {
+      const half_window = window.innerHeight / 2;
+      const section_top = section.offsetTop;
+
+      if (scroll_position > section_top - half_window && scroll_position < section_top + half_window) {
+        this.removeDotStyles();
+        dots[index].classList.add('is-active');
+      }
+    })
+  }
+
+  scrollToSection(e) {
+    const dots = Array.from(this.navigation.children);
+    const window_height = window.innerHeight;
+
+    dots.forEach((dot, index) => {
+      if (dot == e.target) {
+
+        window.scrollTo({
+          top: window_height * index,
+          behavior: 'smooth',
+        });
+      }
+    });
+  }
+}
+
+new Slider({
+  section: '.section',
+  dots: '#js-dots',
+});

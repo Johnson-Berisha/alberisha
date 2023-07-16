@@ -220,6 +220,8 @@ function darkMode() {
   const cinfo = document.querySelector('.contactdesc');
   const card = document.querySelector('.rcard1');
   const card2 = document.querySelector('.rcard2');
+  const cardt1 = document.querySelector('.cardt1');
+  const cardt2 = document.querySelector('.cardt2');
 
   reasons.classList.toggle('dark');
   shapeFill.classList.toggle('dark-svg');
@@ -236,6 +238,8 @@ function darkMode() {
   ptext.classList.toggle('dark-text');
   ctitle.classList.toggle('dark-text');
   cinfo.classList.toggle('dark-text');
+  cardt1.classList.toggle('dark-text');
+  cardt2.classList.toggle('dark-text');
   card.classList.toggle('dark-elem');
   card2.classList.toggle('dark-elem');
 }

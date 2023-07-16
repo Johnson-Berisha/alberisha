@@ -200,3 +200,10 @@ new Slider({
   dots: '#js-dots',
 });
 
+// dark mode
+
+function darkMode() {
+  document.body.classList.toggle('dark');
+  
+}
+

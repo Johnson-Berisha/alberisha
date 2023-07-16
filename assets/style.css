@@ -29,6 +29,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color .2s;
 }
 
 html {
@@ -1296,4 +1297,16 @@ font-size: 18.708px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+/* dark mode */
+
+.dark {
+    background: #292E3D;
+    color: white;
+}
+
+.dark-svg {
+    fill: #292E3D;
+
 }

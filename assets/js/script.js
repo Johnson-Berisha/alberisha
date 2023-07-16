@@ -3,7 +3,6 @@ var slideBottom = {
     distance: '10%',
     origin: 'left',
     opacity: 0,
-    reset: true,
     duration: 1500,
     delay: 250
   };
@@ -12,7 +11,6 @@ var slideBottom = {
     distance: '50%',
     origin: 'top',
     opacity: 0,
-    reset: true,
     duration: 1500,
     delay: 250
   };
@@ -21,11 +19,18 @@ var slideBottom = {
     distance: '50%',
     origin: 'right',
     opacity: 0,
-    reset: true,
     duration: 1500,
     delay: 200
   };
-  
+  var slide4 = {
+    distance: '200%',
+    origin: 'bottom',
+    opacity: 0,
+    duration: 1500,
+    delay: 200
+  };
+
+  ScrollReveal().reveal('.projectbtns', slide4);
   ScrollReveal().reveal('.herodesc', slideBottom);
 
 //   ScrollReveal().reveal('.reasonstext', slide2);
@@ -34,25 +39,21 @@ var slideBottom = {
   ScrollReveal().reveal('.card1', {distance: '10%',
   origin: 'left',
   opacity: 0,
-  reset: true,
   duration: 1500,
   delay: 50});
   ScrollReveal().reveal('.card2', {distance: '10%',
   origin: 'right',
   opacity: 0,
-  reset: true,
   duration: 1500,
   delay: 100});
   ScrollReveal().reveal('.card3', {distance: '10%',
   origin: 'left',
   opacity: 0,
-  reset: true,
   duration: 1500,
   delay: 150});
   ScrollReveal().reveal('.card4', {distance: '10%',
   origin: 'right',
   opacity: 0,
-  reset: true,
   duration: 1500,
   delay: 200});
   ScrollReveal().reveal('.aboutphoto', slideBottom);
@@ -60,6 +61,15 @@ var slideBottom = {
   ScrollReveal().reveal('.servicecardinfo', slide3);
   ScrollReveal().reveal('.statcards', slideBottom);
   ScrollReveal().reveal('.stattext', slide3);
+  ScrollReveal().reveal('.projectstitle', slide2);
+  ScrollReveal().reveal('.projectcard1', slideBottom);
+  ScrollReveal().reveal('.projectcard3', slideBottom);
+  ScrollReveal().reveal('.projectcard2', slide3);
+  ScrollReveal().reveal('.projectcard4', slide3);
+  ScrollReveal().reveal('.contacttext', slide2);
+  ScrollReveal().reveal('input', slide2);
+  ScrollReveal().reveal('textarea', slide3);
+  ScrollReveal().reveal('button', slide4);
 
 
   // projects
@@ -106,6 +116,8 @@ const goBack = () => {
 
 
 }
+
+
 
 let slideIndex = 1;
 showSlides(slideIndex);

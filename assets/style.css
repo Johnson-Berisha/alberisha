@@ -1142,7 +1142,7 @@ line-height: normal;
 
 .inputs {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: calc(433.185px - 204.885px * 2);
 }
 
 .nameinput input {
@@ -1193,7 +1193,7 @@ font-family: 'work sans', sans-serif;
 }
 
 .submit button {
-    margin-top: 15px;
+    margin-top: calc(433.185px - 204.885px * 2);
 width: 198.299px;
 padding: 15.708px 14.635px;
 gap: 7.317px;
@@ -1276,4 +1276,12 @@ input:focus, textarea:focus {
 i {
     color: white;
     margin-top: 1.5px;
+}
+
+/* footer */
+
+.footer {
+    height: 275.863px;
+flex-shrink: 0;
+background: #efefef;
 }

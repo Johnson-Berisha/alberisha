@@ -203,7 +203,40 @@ new Slider({
 // dark mode
 
 function darkMode() {
-  document.body.classList.toggle('dark');
-  
+  const reasons = document.querySelector('.reasons');
+  const shapeFill = document.querySelector('.shape-fill1');
+  const about = document.querySelector('.aboutus'); 
+  const shapeFill2 = document.querySelector('.shape-fill2');
+  const shapeFill3 = document.querySelector('.shape-fill3');
+  const shapeFill4 = document.querySelector('.shape-fill4');
+  const services = document.querySelector('.services');
+  const stats = document.querySelector('.stats');
+  const projects = document.querySelector('.projects');
+  const contact = document.querySelector('.contact');
+  const stext = document.querySelector('.servicestitle');
+  const stattd = document.querySelector('.stattextdesc');
+  const ptext = document.querySelector('.projectstitle');
+  const ctitle = document.querySelector('.contacttitle');
+  const cinfo = document.querySelector('.contactdesc');
+  const card = document.querySelector('.rcard1');
+  const card2 = document.querySelector('.rcard2');
+
+  reasons.classList.toggle('dark');
+  shapeFill.classList.toggle('dark-svg');
+  shapeFill2.classList.toggle('dark-svg');
+  shapeFill3.classList.toggle('dark-svg');
+  shapeFill4.classList.toggle('dark-svg');
+  about.classList.toggle('dark');
+  stats.classList.toggle('dark');
+  contact.classList.toggle('dark');
+  services.classList.toggle('dark-light');
+  projects.classList.toggle('dark-light');
+  stext.classList.toggle('dark-text');
+  stattd.classList.toggle('dark-text');
+  ptext.classList.toggle('dark-text');
+  ctitle.classList.toggle('dark-text');
+  cinfo.classList.toggle('dark-text');
+  card.classList.toggle('dark-elem');
+  card2.classList.toggle('dark-elem');
 }
 

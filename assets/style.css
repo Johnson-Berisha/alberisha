@@ -29,7 +29,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: background-color .2s;
 }
 
 html {
@@ -1302,11 +1301,22 @@ line-height: normal;
 /* dark mode */
 
 .dark {
-    background: #292E3D;
-    color: white;
+    background: #292E3D !important;
+    color: white !important;
+}
+.dark-light {
+    background: #485367 !important;
+    color: white !important;
+}
+.dark-svg {
+    fill: #292E3D !important;
 }
 
-.dark-svg {
-    fill: #292E3D;
+.dark-text {
+    color: #fff !important;
+}
 
+.dark-elem {
+    background: #485367 !important;
+    color: white !important;
 }

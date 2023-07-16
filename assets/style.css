@@ -1270,7 +1270,7 @@ input:focus, textarea:focus {
 }
 
 .custom-shape-divider-bottom-1689495249 .shape-fill {
-    fill: #efefef;
+    fill: var(--primary);
 }
 
 i {
@@ -1281,7 +1281,19 @@ i {
 /* footer */
 
 .footer {
-    height: 275.863px;
+    display: flex;
+height: 60.221px;
+padding: 0px 711.046px 0px 81.954px;
+align-items: center;
 flex-shrink: 0;
-background: #efefef;
+background: var(--primary);
+}
+
+.footerinfo {
+    color: #FFF;
+font-family: Work Sans;
+font-size: 18.708px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }

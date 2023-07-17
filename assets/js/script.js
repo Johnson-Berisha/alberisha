@@ -222,6 +222,12 @@ function darkMode() {
   const card2 = document.querySelector('.rcard2');
   const cardt1 = document.querySelector('.cardt1');
   const cardt2 = document.querySelector('.cardt2');
+  const cardd1 = document.querySelector('.cardd1');
+  const cardd2 = document.querySelector('.cardd2');
+  const scard1 = document.querySelector('.scard1');
+  const scard2 = document.querySelector('.scard2');
+  const cid = document.querySelector('.servicecardinfo');
+  const cid2 = document.querySelector('.cardinfodesc');
 
   reasons.classList.toggle('dark');
   shapeFill.classList.toggle('dark-svg');
@@ -240,7 +246,13 @@ function darkMode() {
   cinfo.classList.toggle('dark-text');
   cardt1.classList.toggle('dark-text');
   cardt2.classList.toggle('dark-text');
+  cardd1.classList.toggle('dark-text');
+  cardd2.classList.toggle('dark-text');
   card.classList.toggle('dark-elem');
   card2.classList.toggle('dark-elem');
+  scard1.classList.toggle('dark-elem2');
+  scard2.classList.toggle('dark-elem2');
+  cid.classList.toggle('dark-elem2');
+  cid2.classList.toggle('dark-elem2');
 }
 

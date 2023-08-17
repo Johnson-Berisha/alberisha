@@ -275,7 +275,7 @@ line-height: normal;
 height: 469px;
 flex-shrink: 0;
 border-radius: 10px;
-background: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/357700378_670462214941189_3901830550556139292_n.jpg?stp=dst-jpg_s403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Hk4EewYEaO0AX_QnZqh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQgtLsol1BPn_w_5GIPXgee1d9Wix7b9Jdayo43PvwpQg&oe=64CA40CD'), lightgray -159.882px -67.003px / 127.181% 114.349% no-repeat;
+background: url('img/leonardalbert.jpg'), lightgray -159.882px -67.003px / 127.181% 114.349% no-repeat;
 background-repeat: no-repeat;
 background-size: cover;
 transform: rotateZ(-15deg);
@@ -770,7 +770,7 @@ background-size: cover;
 .projectcard5 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('https://scontent.fprn7-1.fna.fbcdn.net/v/t39.30808-6/339421069_242423644827409_4142879991147279826_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=L3YFY2YeJ2YAX9Fqwd7&_nc_ht=scontent.fprn7-1.fna&oh=00_AfADF2HZPTZqXm5rFhJZ2YK_omSgz_z6zcI1KimbNuSWgQ&oe=64ADFE26');
+background: url('project-sec-img/img2.jpg');
 background-size: cover;
 }
 
@@ -781,14 +781,14 @@ background-size: cover;
 .projectcard6 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('https://scontent.fprn7-1.fna.fbcdn.net/v/t39.30808-6/295945420_833284421385703_7225567210077634679_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=5_ogWAi07mcAX-vWXuV&_nc_oc=AQlMW5DBVzNiCay_E96yI_XRnjUm5ywSapBZF9f_1KMFG-0Caw1_4gJ4y4I5okOnlmU&_nc_ht=scontent.fprn7-1.fna&oh=00_AfAfhuWjy3mFFASs6hpJebEWpOEGWFhX1806smyO3Du8KQ&oe=64AE5975');
+background: url('project-sec-img/img6.jpg');
 background-size: cover;
 }
 
 .projectcard7 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('https://scontent.fprn7-1.fna.fbcdn.net/v/t39.30808-6/278192382_760373555343457_3984362892017540359_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KiyKnnTRl7EAX_9n5v2&_nc_ht=scontent.fprn7-1.fna&oh=00_AfCSS9gn06LP7fYIWiz14lbE7jgQC1mJre7IFsGQW8KAmA&oe=64AF0221');
+background: url('project-sec-img/img7.jpg');
 background-size: cover;
 }
 

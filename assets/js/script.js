@@ -62,10 +62,10 @@ var slideBottom = {
   ScrollReveal().reveal('.statcards', slideBottom);
   ScrollReveal().reveal('.stattext', slide3);
   ScrollReveal().reveal('.projectstitle', slide2);
-  ScrollReveal().reveal('.projectcard1', slideBottom);
-  ScrollReveal().reveal('.projectcard3', slideBottom);
-  ScrollReveal().reveal('.projectcard2', slide3);
-  ScrollReveal().reveal('.projectcard4', slide3);
+  ScrollReveal().reveal('.projectcard1');
+  ScrollReveal().reveal('.projectcard3');
+  ScrollReveal().reveal('.projectcard2');
+  ScrollReveal().reveal('.projectcard4');
   ScrollReveal().reveal('.contacttext', slide2);
   ScrollReveal().reveal('input', slide2);
   ScrollReveal().reveal('textarea', slide3);

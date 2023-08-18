@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mail.css' rel='stylesheet'>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   
 
 </head>
 <body>
@@ -413,7 +413,8 @@
                 </div>
             </div>
             <div class="contactform">
-                <form action="https://formspree.io/f/xknlnddo" method="POST" class="form" autocomplete="off">
+                <form action="https://formspree.io/f/xknlnddo"
+                method="POST" class="form" autocomplete="off">
                     <div class="inputs">
                     <div class="nameinput">
                         <input type="text" placeholder="Emri..." name="name" id="name">
@@ -421,12 +422,13 @@
                     <div class="phone">
                         <input type="number" placeholder="Numri Telfonit..." name="phone" id="phone">
                     </div>
+       
                 </div>
                     <div class="textarea">
                         <textarea name="textarea" placeholder="Mesazhi..." id="textarea" cols="30" rows="10" style="resize: none;"></textarea>
                     </div>
                     <div class="submit">
-                        <button type="submit"><span>Dergo</span> <i class="gg-mail"></i></button>
+                        <button type="submit" onclick="sendEmail();"><span>Dergo</span> <i class="gg-mail"></i></button>
                     </div>
                 </form>
             </div>

@@ -263,3 +263,10 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector("body").classList.add("loaded");
   }, 1500)
 });
+
+// nav
+const nav = document.querySelector('.menu');
+
+function openNav() {
+  nav.classList.toggle('open');
+}

@@ -265,6 +265,23 @@ font-weight: 400;
 line-height: normal;
 }
 
+@media  screen and (max-width: 768px) {
+    .reasonstitle {
+        font: 2rem;
+    }
+    .reasons{
+        height: 510px;
+    }
+    .reasonscards {
+        flex-direction: column;
+    }
+    .card {
+        margin: 10px 0;
+    }
+}
+
+/* about us */
+
 .aboutus {
     height: 650px;
     display: flex;

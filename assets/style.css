@@ -346,6 +346,28 @@ z-index: 1;
 box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17, 24, 39, 0.10);
 }
 
+
+@media screen and (max-width: 768px) {
+    .aboutus {
+        flex-direction: column;
+        height: 1000px;
+    }
+    .abouttext {
+        transform: rotateZ(0deg);
+        width: 352px;
+        height: 450px;
+
+    }
+    .aboutdesc {
+        display: inline;
+    }
+    .aboutphoto {
+        transform: rotateZ(0deg);
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+}
+
 /* services */
 .services {
 height: 608px;

@@ -720,6 +720,32 @@ background: var(--primary, #FC3F3F);
 margin-top: 60px;
 }
 
+@media screen and (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 900px;
+        
+    }
+    .statcard1, .statcard2, .statcard3 {
+        position: static;
+        transform: translateX(0);
+    }
+
+    .statcards, .stattext {
+        width: 100%;
+    }
+    .statcards{
+        display: grid;
+        place-items: center;
+    }
+    .stattext {
+        margin: 30px 0;
+    }
+
+}
+
 /* projects */
 
 .projects {
@@ -885,6 +911,12 @@ transition: all .3s ease-in-out;
     display: block;
     width: calc(100% + 1.3px);
     height: 152px;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-shape-divider-top-1688807631 svg {
+        height: 20px;
+    }
 }
 
 .custom-shape-divider-top-1688807631 .shape-fill {

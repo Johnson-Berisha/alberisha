@@ -61,7 +61,7 @@ var slideBottom = {
   ScrollReveal().reveal('.servicecardinfo', slide3);
   ScrollReveal().reveal('.statcards', slideBottom);
   ScrollReveal().reveal('.stattext', slide3);
-  ScrollReveal().reveal('.projectstitle', slide2);
+  ScrollReveal().reveal('.projectstitle');
   ScrollReveal().reveal('.projectcard1');
   ScrollReveal().reveal('.projectcard3');
   ScrollReveal().reveal('.projectcard2');

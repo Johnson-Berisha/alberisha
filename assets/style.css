@@ -788,6 +788,7 @@ transform: translateY(100%);
     height: 70vh;
     display: grid;
     place-items: center;
+    width: 100%;
 }
 
 .page {
@@ -917,6 +918,36 @@ transition: all .3s ease-in-out;
     .custom-shape-divider-top-1688807631 svg {
         height: 20px;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .projects {
+        height: 1350px;
+    }
+
+    .projectstext{
+        height: 20%;
+    }
+
+    .projectstitle {
+        transform: translate(-40%, -80%);
+    }
+
+    .pages {
+        width: 100%;
+        height: 100vh;
+       display: flex;
+
+    }
+    .page {
+        grid-template-columns: 1fr;
+        place-items: center;
+        width: 100%;
+
+    }
+    
+    
 }
 
 .custom-shape-divider-top-1688807631 .shape-fill {

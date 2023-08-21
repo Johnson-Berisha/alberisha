@@ -1485,6 +1485,53 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+
+@media screen and (max-width: 768px) {
+    .contact {
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contacttext {
+        transform: translateY(100%) !important;
+        width: 300px;
+    }
+    
+    .contactdesc {
+        margin: 0 20px;
+    }
+    .contactform {
+        display: block;
+        transform: translateY(30%);
+    }
+  .inputs {
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .nameinput {
+    width: 304.885px;
+    margin-bottom: 10px;
+  }
+
+  .nameinput input {
+      border-top-right-radius: 10px;
+  }
+  .phone input {
+    border-radius: 5px;
+  }
+  textarea {
+    width: 304.885px;
+  }
+  
+}
+
 ::-webkit-input-placeholder {
     color: var(--primary);
     font-family: Work Sans;
@@ -1505,7 +1552,7 @@ input:focus, textarea:focus {
 
 .custom-shape-divider-bottom-1689495249 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -1518,6 +1565,13 @@ input:focus, textarea:focus {
     display: block;
     width: calc(100% + 1.3px);
     height: 82px;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-shape-divider-bottom-1689495249 svg {
+        height: 30px;
+    }
+    
 }
 
 .custom-shape-divider-bottom-1689495249 .shape-fill {
@@ -1538,6 +1592,7 @@ padding: 0px 711.046px 0px 81.954px;
 align-items: center;
 flex-shrink: 0;
 background: var(--primary);
+width: 100%;
 }
 
 .footerinfo {
@@ -1547,7 +1602,21 @@ font-size: 18.708px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 0px 0px 0px 0px;
+        transform: translateY(200%) !important;
+      
+    }
+    .footerinfo {
+        font-size: 14px;
+    }
+    
+}
+
 
 /* dark mode */
 

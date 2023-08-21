@@ -1310,6 +1310,13 @@ background-size: cover;
     height: 183px;
 }
 
+@media screen and (max-width: 768px) {
+    .custom-shape-divider-bottom-1689453058 svg {
+        height: 60px;
+    }
+    
+}
+
 .custom-shape-divider-bottom-1689453058 .shape-fill {
     fill: var(--primary);
 }
@@ -1336,6 +1343,13 @@ position: relative;
     width: calc(132% + 1.3px);
     height: 105px;
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .custom-shape-divider-top-1689453440 svg {
+        height: 60px;
+    }
+    
 }
 
 .custom-shape-divider-top-1689453440 .shape-fill {

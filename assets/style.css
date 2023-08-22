@@ -60,7 +60,7 @@ body {
     
 }
 
-.logo, .links{
+.logo, .links, .langselect{
     margin: 0 68.16px;
 }
 
@@ -1735,4 +1735,97 @@ width: 100%;
     opacity: 0;
    }
 
- 
+.langselect {
+ position: relative;
+ margin-right: 100px;
+}
+
+   .selected-lang {
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width:70px; */
+   }
+
+   .selected-lang::before {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    background: url(img/Flag_of_Albania.png);
+    background-size: cover;
+   }
+
+   .langselect .otheropt {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    position: absolute;
+    display: none;
+    margin-top: 1px;
+    box-shadow: #111 0px 0px 1px;
+   }
+
+   .langselect:hover .otheropt {
+    display: block;
+   }
+
+   .langselect .otheropt div a {
+    text-decoration: none;
+    width: 125px;
+    display: block;
+    color: #111;
+    padding: 5px 10px;
+   }
+
+   .langselect .otheropt div a:hover {
+    background-color: #f0f0f0cc;
+   }
+   .langselect .otheropt div a.en {
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:50px; 
+   }
+
+.en::before {
+    background: url(img/Flag_of_the_United_Kingdom.png);
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 45px;
+    border-radius: 5px;
+    height: 20px;
+    background-size: cover;
+}
+  
+.langselect .otheropt div a.de {
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:50px; 
+   }
+
+.de::before {
+    background: url(img/flagofde.png);
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 45px;
+    border-radius: 5px;
+    height: 20px;
+    background-size: cover;
+}

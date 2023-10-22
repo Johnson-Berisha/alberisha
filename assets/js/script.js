@@ -200,62 +200,6 @@ new Slider({
   dots: '#js-dots',
 });
 
-// dark mode
-
-function darkMode() {
-  const reasons = document.querySelector('.reasons');
-  const shapeFill = document.querySelector('.shape-fill1');
-  const about = document.querySelector('.aboutus'); 
-  const shapeFill2 = document.querySelector('.shape-fill2');
-  const shapeFill3 = document.querySelector('.shape-fill3');
-  const shapeFill4 = document.querySelector('.shape-fill4');
-  const services = document.querySelector('.services');
-  const stats = document.querySelector('.stats');
-  const projects = document.querySelector('.projects');
-  const contact = document.querySelector('.contact');
-  const stext = document.querySelector('.servicestitle');
-  const stattd = document.querySelector('.stattextdesc');
-  const ptext = document.querySelector('.projectstitle');
-  const ctitle = document.querySelector('.contacttitle');
-  const cinfo = document.querySelector('.contactdesc');
-  const card = document.querySelector('.rcard1');
-  const card2 = document.querySelector('.rcard2');
-  const cardt1 = document.querySelector('.cardt1');
-  const cardt2 = document.querySelector('.cardt2');
-  const cardd1 = document.querySelector('.cardd1');
-  const cardd2 = document.querySelector('.cardd2');
-  const scard1 = document.querySelector('.scard1');
-  const scard2 = document.querySelector('.scard2');
-  const cid = document.querySelector('.servicecardinfo');
-  const cid2 = document.querySelector('.cardinfodesc');
-
-  reasons.classList.toggle('dark');
-  shapeFill.classList.toggle('dark-svg');
-  shapeFill2.classList.toggle('dark-svg');
-  shapeFill3.classList.toggle('dark-svg');
-  shapeFill4.classList.toggle('dark-svg');
-  about.classList.toggle('dark');
-  stats.classList.toggle('dark');
-  contact.classList.toggle('dark');
-  services.classList.toggle('dark-light');
-  projects.classList.toggle('dark-light');
-  stext.classList.toggle('dark-text');
-  stattd.classList.toggle('dark-text');
-  ptext.classList.toggle('dark-text');
-  ctitle.classList.toggle('dark-text');
-  cinfo.classList.toggle('dark-text');
-  cardt1.classList.toggle('dark-text');
-  cardt2.classList.toggle('dark-text');
-  cardd1.classList.toggle('dark-text');
-  cardd2.classList.toggle('dark-text');
-  card.classList.toggle('dark-elem');
-  card2.classList.toggle('dark-elem');
-  scard1.classList.toggle('dark-elem2');
-  scard2.classList.toggle('dark-elem2');
-  cid.classList.toggle('dark-elem2');
-  cid2.classList.toggle('dark-elem2');
-}
-
 // preloader
 
 document.addEventListener("DOMContentLoaded", function() {

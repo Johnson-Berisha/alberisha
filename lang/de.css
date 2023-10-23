@@ -1803,10 +1803,11 @@ width: 100%;
     content: '';
     margin-right: 8px;
     display: block;
-    width: 30px;
+    min-width: 35px;
     border-radius: 5px;
     height: 20px;
     background-size: cover;
+    background-position: 15% 35%;
 }
   
 .langselect .otheropt div a.en {
@@ -1824,10 +1825,11 @@ width: 100%;
     content: '';
     margin-right: 8px;
     display: block;
-    width: 45px;
+    width: 35px;
     border-radius: 5px;
     height: 20px;
     background-size: cover;
+    background-position: 30% 0%;
 }
 
 .warningforusers {

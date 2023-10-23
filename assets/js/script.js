@@ -214,3 +214,4 @@ const nav = document.querySelector('.menu');
 function openNav() {
   nav.classList.toggle('open');
 }
+

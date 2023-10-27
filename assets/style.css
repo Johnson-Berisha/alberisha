@@ -1589,26 +1589,21 @@ i {
 .footer {
     display: flex;
 height: 60.221px;
-padding: 0px 711.046px 0px 81.954px;
+padding-left:20px;
 align-items: center;
 flex-shrink: 0;
 background: var(--primary);
 width: 100%;
-}
-
-.footerinfo {
-    color: #FFF;
+color: #FFF;
 font-family: Work Sans;
 font-size: 18.708px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        padding: 0px 0px 0px 0px;
+    .footer { 
         transform: translateY(200%) !important;
       
     }

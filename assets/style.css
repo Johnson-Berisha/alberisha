@@ -754,6 +754,7 @@ height: 753.442px;
 flex-shrink: 0;
 display: grid;
 place-items: center;
+
 background: #efefef;
 position: relative;
 }
@@ -764,7 +765,65 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 transform: translateY(70%);
+}
+
+.modal {
+    z-index: 5;
+    /* background-color: #292E3D; */
+    position: relative;
+
+}
+
+.images {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+    z-index: 200;
+  }
+  
+  .modal-content {
+    position: relative;
+    margin: 5% auto;
+    padding: 35px;
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    
+  }
+  
+  .close {
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: 7px;
+    
+    font-size: 30px;
+    color: var(--primary);
+    cursor: pointer;
+  }
+  
+  /* Grid layout for images */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    gap: 10px;
+  }
+  
+  .grid img {
+    width: 100%;
+    height: 160px;
+    border-radius: 4px;
+  }
+  
+
+.modal .showmodal{
+    color: var(--primary);
 }
 
 
@@ -843,7 +902,7 @@ overflow: hidden;
 
 .projectbtns {
     display: flex;
-width: 585.386px;
+width: 600px;
 height: 10%;
 justify-content: space-around;
 align-items: center;
@@ -859,7 +918,7 @@ flex-shrink: 0;
     display: flex;
 width: 215.861px;
 height: 46.831px;
-padding: 2.927px 14.635px;
+padding: 10px 14.635px;
 border-radius: 10px;
 justify-content: center;
 align-items: center;
@@ -899,6 +958,10 @@ transition: all .3s ease-in-out;
 .active {
     background-color: white;
 }
+
+
+
+
 .custom-shape-divider-top-1688807631 {
     position: absolute;
     top: 0;
@@ -1026,7 +1089,7 @@ background-size: cover;
 .projectcard7 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('project-sec-img/img7.jpg');
+background: url('project-sec-img/img23.jpg');
 background-size: cover;
 }
 
@@ -1115,14 +1178,14 @@ background-size: cover;
 .projectcard19 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('project-sec-img/img19.jpg');
+background: url('project-sec-img/img24.jpg');
 background-size: cover;
 }
 
 .projectcard20 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('project-sec-img/img20.jpg');
+background: url('project-sec-img/img25.jpg');
 background-size: cover;
 background-position: 0 60%;
 }

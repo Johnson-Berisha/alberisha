@@ -215,3 +215,21 @@ function openNav() {
   nav.classList.toggle('open');
 }
 
+
+// modal
+
+const modal = document.getElementById("imageModal");
+const showButton = document.getElementById("showAllImages");
+const closeButton = document.querySelector(".close");
+
+showButton.onclick = (event) => {
+  event.preventDefault(); // Prevents page scroll to top
+  modal.style.display = "block";
+};
+
+closeButton.onclick = () => modal.style.display = "none";
+window.onclick = (e) => {
+  if (e.target == modal) modal.style.display = "none";
+};
+
+

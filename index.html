@@ -14,7 +14,9 @@
 </head>
 <body>
 
+
     <div class="loader">
+
         
 <div class="spinner"></div>
     </div>
@@ -28,6 +30,40 @@
         <li class="nav-dot"></li>
         <li class="nav-dot"></li>
     </ul>
+
+    <div id="imageModal" class="images">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="grid">
+            <!-- Add image elements here -->
+            <img src="assets/project-sec-img/img1.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img2.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img3.jpg" alt="Project 3">
+            <img src="assets/project-sec-img/img5.jpg" alt="Project 4">
+            <img src="assets/project-sec-img/img6.jpg" alt="Project 5">
+            <img src="assets/project-sec-img/img4.jpg" alt="Project 6">
+            <img src="assets/project-sec-img/img7.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img8.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img9.jpg" alt="Project 3">
+            <img src="assets/project-sec-img/img10.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img11.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img12.jpg" alt="Project 3">
+            <img src="assets/project-sec-img/img13.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img14.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img15.jpg" alt="Project 3">
+            <img src="assets/project-sec-img/img16.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img17.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img18.jpg" alt="Project 3">
+            <img src="assets/project-sec-img/img19.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img20.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img21.jpg" alt="Project 3">
+            <img src="assets/project-sec-img/img22.jpg" alt="Project 1">
+            <img src="assets/project-sec-img/img23.jpg" alt="Project 2">
+            <img src="assets/project-sec-img/img24.jpg" alt="Project 3">
+            <!-- Repeat for all images -->
+          </div>
+        </div>
+      </div>
     
 
     <section class="container">
@@ -74,7 +110,7 @@
             </div>
             <div class="herodesc"><div class="primary" style="font-size: 72px;">Berisha A&L</div> Ndërtimtaria në nivelin e saj të pikut.</div>
             <div class="custom-shape-divider-bottom-1688755788">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <svg data-name="Layer 1"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill shape-fill1"></path>
                 </svg>
             </div>
@@ -89,14 +125,21 @@
                     <img src="assets/img/service.svg" style="width: 40px;
                     height: 40px;" alt="">
                     <div class="cardtitle cardt1">Shërbimet më të mira</div>
-                    <div class="carddesc cardd1">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</div>
+                    <div class="carddesc cardd1">Ofrojmë zgjidhje të personalizuara dhe shërbim profesional për të garantuar kënaqësinë maksimale të klientëve tanë.</div>
                 </div>
                 <div class="card rcard2">
                     <img src="assets/img/design.svg" style="width: 40px;
                     height: 40px;" alt="">
                     <div class="cardtitle cardt2">Modelet më të mira</div>
-                    <div class="carddesc cardd2">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</div>
+                    <div class="carddesc cardd2">Dizajnojmë modele të cilësisë së lartë që pasqyrojnë më së miri nevojat dhe kërkesat e tregut modern.</div>
                 </div>
+                <div class="card rcard3">
+                    <img src="assets/img/work.svg" style="width: 40px;
+                    height: 40px;" alt="">
+                    <div class="cardtitle cardt2">Ekspertiza jone e pasur</div>
+                    <div class="carddesc cardd2">Ne përbëhem nga profesionistë me përvojë, të përkushtuar për të ofruar zgjidhje të avancuara dhe efikase.</div>
+                </div>
+                
             </div>
         </section>
         <section class="aboutus section" id="about">
@@ -227,6 +270,13 @@
             <div class="projectstext">
                 <div class="projectstitle">
                     Ndërtimet Tona
+                </div>
+                <div class="modal">
+                    <a href="#" class="showmodal" id="showAllImages">Shfaq të gjitha</a>
+
+                    
+
+                    
                 </div>
             </div>
             <div class="projectscards" style="z-index: 1;">
@@ -393,6 +443,7 @@
                 
             </div>
         </div>
+        
     </div>
         </div>
         <div class="projectbtns" style="z-index: 1;">
@@ -411,6 +462,7 @@
   <div class="dot"></div> 
 
             </div>
+            
             <div class="btnnext" >
                 <div onclick="goNext(); plusSlides(1);" class="nextbtn">Para <svg width="20" height="14" class="arrownext" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="arrownext" fill-rule="evenodd" clip-rule="evenodd" d="M0.956011 7.06714C0.956011 7.2504 1.02759 7.42615 1.15501 7.55574C1.28243 7.68532 1.45524 7.75812 1.63543 7.75812L17.6603 7.75813L13.384 12.1058C13.3208 12.17 13.2707 12.2463 13.2365 12.3302C13.2023 12.4142 13.1848 12.5042 13.1848 12.595C13.1848 12.6859 13.2023 12.7758 13.2365 12.8598C13.2707 12.9437 13.3208 13.02 13.384 13.0842C13.4472 13.1485 13.5222 13.1994 13.6047 13.2342C13.6872 13.269 13.7757 13.2869 13.865 13.2869C13.9544 13.2869 14.0428 13.269 14.1254 13.2342C14.2079 13.1994 14.2829 13.1485 14.3461 13.0842L19.7814 7.55636C19.8447 7.49217 19.8949 7.41592 19.9292 7.33197C19.9634 7.24803 19.981 7.15803 19.981 7.06714C19.981 6.97625 19.9634 6.88626 19.9292 6.80231C19.8949 6.71836 19.8447 6.64211 19.7814 6.57793L14.3461 1.05006C14.2829 0.985814 14.2079 0.934852 14.1254 0.900083C14.0428 0.865314 13.9544 0.847419 13.865 0.847419C13.7757 0.847419 13.6872 0.865314 13.6047 0.900083C13.5222 0.934852 13.4472 0.985814 13.384 1.05006C13.3208 1.1143 13.2707 1.19057 13.2365 1.27451C13.2024 1.35845 13.1848 1.44842 13.1848 1.53927C13.1848 1.63013 13.2024 1.7201 13.2365 1.80404C13.2707 1.88798 13.3208 1.96425 13.384 2.02849L17.6603 6.37616L1.63543 6.37616C1.45524 6.37616 1.28243 6.44896 1.15501 6.57854C1.02759 6.70813 0.956011 6.88388 0.956011 7.06714Z" fill="white"/>
@@ -418,6 +470,7 @@
                     </div>
             </div>
         </div>
+        
         <div class="custom-shape-divider-bottom-1689453058">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>

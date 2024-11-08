@@ -904,7 +904,7 @@ overflow: hidden;
     display: flex;
 width: 600px;
 height: 10%;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
 }
 
@@ -916,10 +916,10 @@ flex-shrink: 0;
 
 .backbtn, .nextbtn {
     display: flex;
-width: 215.861px;
-height: 46.831px;
+width: 46px;
+height: 46px;
 padding: 10px 14.635px;
-border-radius: 10px;
+border-radius: 50%;
 justify-content: center;
 align-items: center;
 gap: 7.317px;
@@ -945,6 +945,7 @@ transition: all .1s ease-in-out;
     display: flex;
 align-items: center;
 gap: 11.708px;
+padding: 0 20px;
 }
 
 .dot {

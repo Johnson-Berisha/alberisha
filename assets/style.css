@@ -1757,7 +1757,7 @@ line-height: normal;
 .loader {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 5000;
     background-color: white;
     display: grid;

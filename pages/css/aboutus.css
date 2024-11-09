@@ -1,3 +1,49 @@
+:root {
+    --primary: #fc3f3f;
+    --secondary: #db4040;
+    --dark:#14171f;
+  }
+
 .aboutus {
     height: 100vh;
+    width: 100%;
 }
+
+.about_text{
+    height: 100%;
+    width: 60%;
+    /* background: red; */
+    font-size: 26px;
+    padding: 5rem;
+}
+
+.about_title{
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--primary);
+    padding-bottom: 1.5rem;
+}
+
+p {
+    width: 80%;
+    padding: 15px 0;
+}
+
+.contactbtn{
+    font-size: 20px;
+    width: 175px;
+    margin: 20px 0;
+}
+
+
+
+.about_photo {
+    height: 100%;
+    width: 40%;
+    background: blue;
+    background-image: url('../../assets/img/leonardalbert.jpg');
+    background-size: cover;
+    border-top-left-radius: 50%;
+  
+}
+

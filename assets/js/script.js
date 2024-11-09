@@ -205,7 +205,7 @@ new Slider({
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
       document.querySelector("body").classList.add("loaded");
-  }, 1500)
+  }, 1000)
 });
 
 // nav

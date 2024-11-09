@@ -67,14 +67,33 @@ body {
 .link {
     color: var(--dark);
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 15.17px;
     font-weight: 500;
     transition: color .2s;
 }
+.spanlink{
+  
+    height: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+}
+
+.linkline {
+    background: var(--primary);
+    height: 2px;
+    border-radius: 10px;
+    width: 0;
+    transition: width .2s;
+}
 
 .link:hover{
     color: var(--primary);
+    font-weight: bold;
+}
+
+.link:hover + .linkline{
+    width: 100%;
 }
 
 .contactlink{
@@ -1785,7 +1804,7 @@ line-height: normal;
     width: var(--size);
     height: var(--size);
     top: 50%;
-    animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    animation: up 2s cubic-bezier(0, 0, 0.24, 1.21) infinite;
     left: 50%;
     background: var(--first-block-clr);
     transition: all 0.2s;
@@ -1795,7 +1814,7 @@ line-height: normal;
     background: var(--second-block-clr);
     top: calc(50% - var(--size));
     left: calc(50% - var(--size));
-    animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    animation: down 2s cubic-bezier(0, 0, 0.24, 1.21) infinite;
     
    }
    

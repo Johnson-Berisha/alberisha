@@ -33,8 +33,8 @@ var slideBottom = {
     delay: 200
   };
 
-  ScrollReveal().reveal('.projectbtns', slide4);
-  ScrollReveal().reveal('.herodesc', slideBottom);
+  ScrollReveal().reveal('.projectbtns');
+  ScrollReveal().reveal('.herodesc', {duration: 1500});
 
 //   ScrollReveal().reveal('.reasonstext', slide2);
   ScrollReveal().reveal('.header', slide2, {delay: 0});

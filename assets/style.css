@@ -51,7 +51,7 @@ body {
 
 
 .header {
-    height: 68.54px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -176,7 +176,7 @@ img {
 
 .primary {
     color: var(--primary);
-    font-size: 62px;
+    font-size: 60px;
 }
 
 .herodesc {
@@ -450,12 +450,7 @@ box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17,
 }
 
 /* services */
-.services {
-height: 608px;
-flex-shrink: 0;
-background:#efefef;
-position: relative;
-}
+
 
 .custom-shape-divider-top-1688756636 {
     position: absolute;
@@ -498,11 +493,24 @@ position: relative;
     fill: #FFFFFF;
 }
 
+.services {
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    flex-shrink: 0;
+    background: #efefef;
+    position: relative;/* for waves */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
 .servicestext {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    /* height: 20%; */
 }
 
 .servicestitle {
@@ -520,19 +528,20 @@ line-height: normal;
 .servicescards {
     display: grid;
     justify-items: center;
+    align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
 
 .servicecard{
-    display: flex;
-width: 271px;
-height: 181px;
+    display: flex;   
+width: 300px;
+height: 180px;
 padding: 20px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 20px;
+gap: 10px;
 flex-shrink: 0;
 border-radius: 10px;
 background: #FFF;
@@ -548,19 +557,19 @@ line-height: normal;
 
 .servicecardinfo{
     color: var(--primary);
-    overflow-y: scroll;
-width: 380px;
-height: 412px;
-padding: 30px;
+    overflow-y: auto;
+width: 300px;
+height: 410px; /* 180*2+10 */
+padding: 25px;
 flex-shrink: 0;
 border-radius: 10px;
 background: #FFF;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-grid-row: span 2;
+grid-row: 2 span;
 }
 
 .cardinfotitle {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-weight: bold;
 }

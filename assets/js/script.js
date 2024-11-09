@@ -1,4 +1,7 @@
 // scroll
+
+ScrollReveal({ mobile: false });
+
 var slideBottom = {
     distance: '10%',
     origin: 'left',

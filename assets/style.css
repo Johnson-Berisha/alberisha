@@ -320,59 +320,62 @@ line-height: normal;
 @media  screen and (max-width: 768px) {
     .reasonstitle {
         font: 2rem;
+        text-align: center;
     }
-    .reasons{
-        height: 510px;
-    }
+   
     .reasonscards {
         flex-direction: column;
+        align-items: center;
     }
-    .card {
-        margin: 10px 0;
-    }
+   
 }
 
 /* about us */
 
 .aboutus {
-    height: 650px;
+    --spacingabt: 15px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
+    gap: calc(var(--spacingabt) * 3);
+    padding: calc(var(--spacingabt) * 4) 0;
 }
 
 .abouttext {
-    width: 418px;
-height: 523px;
-border-radius: 10px;
-background: var(--primary, rgb(252, 63, 63));
-z-index: 2;
-/* transform: rotateZ(5deg); */
+    width: 400px;
+    height: fit-content;
+    border-radius: 10px;
+    background: var(--primary, rgb(252, 63, 63));
+    z-index: 2;
+    text-align: center;
+
+    /* flex */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: calc(var(--spacingabt) * 2);
+    padding: calc(var(--spacingabt) * 3);
+   
+
 
 /* Shadow 1 */
-box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17, 24, 39, 0.10);
-padding: 40px;
-/* position: absolute;
-left: 60%; */
+    box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17, 24, 39, 0.10);
 }
 
 .abouttitle {
     color: #FFF;
 
-/* Heading/4 */
-font-size:40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-bottom: 40px;
+    /* Heading/4 */
+    font-size:40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-.aboutdesc {
-    display: flex;
-width: 348px;
-flex-direction: column;
-flex-shrink: 0;
+.abouttext p {
 color: #FFF;
 
 /* Body/medium */
@@ -381,15 +384,14 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
 .aboutphoto {
-    width: 352px;
-height: 469px;
-flex-shrink: 0;
+    width: 350px;
+height: 470px;
 border-radius: 10px;
 background: url('img/leonardalbert.jpg'), lightgray -159.882px -67.003px / 127.181% 114.349% no-repeat;
 background-repeat: no-repeat;
 background-size: cover;
-transform: rotateZ(-15deg);
 z-index: 1;
 
 
@@ -401,21 +403,13 @@ box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17,
 @media screen and (max-width: 768px) {
     .aboutus {
         flex-direction: column;
-        height: 1000px;
-    }
-    .abouttext {
-        transform: rotateZ(0deg);
-        width: 352px;
-        height: 450px;
+        gap: calc(var(--spacingabt) * 2);
 
     }
-    .aboutdesc {
-        display: inline;
-    }
-    .aboutphoto {
-        transform: rotateZ(0deg);
-        margin-bottom: 20px;
-        margin-top: 30px;
+
+    .abouttext{
+        padding: calc(var(--spacingabt) * 2);
+        width: 350px;
     }
 }
 

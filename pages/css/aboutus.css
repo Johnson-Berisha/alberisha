@@ -5,16 +5,18 @@
   }
 
 .aboutus {
-    height: 100vh;
+    height: fit-content;
     width: 100%;
+    
 }
 
 .about_text{
-    height: 100%;
+    height: fit-content;
     width: 60%;
     /* background: red; */
     font-size: 26px;
     padding: 5rem;
+    /* text-align: center; */
 }
 
 .about_title{
@@ -38,12 +40,41 @@ p {
 
 
 .about_photo {
-    height: 100%;
+    height: 100vh;
     width: 40%;
     background: blue;
     background-image: url('../../assets/img/leonardalbert.jpg');
     background-size: cover;
     border-top-left-radius: 50%;
   
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus {
+        display: block;
+        
+    }
+    .about_photo {
+        width: 100%;
+        border-radius: 0;
+        height: 40vh;
+    }
+    .about_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        font-size: 20px;
+    }
+    .about_desc {
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 

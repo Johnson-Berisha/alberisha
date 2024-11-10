@@ -33,7 +33,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 68.54px;
+    scroll-padding: 70px;
     overflow-x: hidden;
 }
 
@@ -92,6 +92,15 @@ body {
     transition: width .2s;
 }
 
+.activelink{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.activelink + .linkline{
+    width: 100%;
+}
+
 .link:hover{
     color: var(--primary);
     font-weight: bold;
@@ -102,8 +111,17 @@ body {
 }
 
 .contactlink{
-    color: var(--primary);
+    color: #fff;
     font-weight: bold;
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.contactlink:hover{
+    background-color: white;
+    border: 1px solid var(--primary);
 }
 
 .nav-dots {
@@ -1702,11 +1720,9 @@ i {
 
 .footer {
     /* display: flex; */
-height: 325px;
+height: fit-content;
 overflow-y: hidden;
 
-
-flex-shrink: 0;
 background: var(--secondary);
 width: 100%;
 color: #FFF;
@@ -1723,8 +1739,7 @@ line-height: normal;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 20%;
-    padding: 0 20px;
+    padding: 20px 20px;
     background: var(--primary);
 }
 
@@ -1766,9 +1781,8 @@ line-height: normal;
 }
 
 @media screen and (max-width: 768px) {
-    .footer { 
-        transform: translateY(200%) !important;
-      
+    .footer {
+        overflow-x: hidden;
     }
     .footerinfo {
         font-size: 14px;

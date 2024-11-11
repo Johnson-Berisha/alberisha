@@ -114,6 +114,7 @@ body {
     color: #fff;
     font-weight: bold;
     background-color: var(--primary);
+    border: 2px solid var(--primary);
     padding: 5px 10px;
     border-radius: 20px;
     transition: all .2s;
@@ -121,7 +122,6 @@ body {
 
 .contactlink:hover{
     background-color: white;
-    border: 1px solid var(--primary);
 }
 
 .nav-dots {
@@ -762,11 +762,11 @@ margin-top: 30px;
 }
 .contactbtn {
     display: flex;
-width: 158.785px;
-padding: 11.708px 14.635px;
+width: 160px;
+padding: 12px 15px;
 justify-content: center;
 align-items: center;
-gap: 7.317px;
+gap: 7px;
 color: white;
 text-decoration: none;
 border-radius: 5.463px;
@@ -1775,13 +1775,19 @@ line-height: normal;
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        overflow-x: hidden;
+
+    .bigfooter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
     }
-    .footerinfo {
-        font-size: 14px;
+    .bigfootersection{
+        width: 100%;
     }
-    
+    .footertext{
+       font-size: 15px;
+    }
 }
 
 

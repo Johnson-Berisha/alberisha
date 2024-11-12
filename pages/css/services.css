@@ -1,0 +1,61 @@
+:root {
+    --primary: #fc3f3f;
+    --secondary: #db4040;
+    --dark:#14171f;
+  }
+
+section.service {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.service-grid {
+    width: 50%;
+
+    /* grid */
+    --spacing: 24px;
+    display: grid;
+    gap: var(--spacing);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: calc(var(--spacing) * 2);
+}
+
+.servicecard {
+    height: 250px;
+}
+
+
+
+.servicecard-desc {
+    color: #858EAD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.redcard .servicecard-desc {
+    color: #ffefef;
+}
+
+.service-text {
+    width: 50%;
+    padding: 5rem;
+}
+
+.service-text h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--primary);
+    padding-bottom: 1.5rem;
+}
+
+.service-text p {
+    padding: 15px 0;
+    font-size: 20px;
+}

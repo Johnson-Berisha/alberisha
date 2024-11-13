@@ -59,3 +59,28 @@ section.service {
     padding: 15px 0;
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    section.service{
+        display: block;
+    }
+
+    .service-text, .service-grid {
+        width: 100%;
+    }
+
+    .service-text {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    
+    }
+}
+
+
+
+
+

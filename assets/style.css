@@ -812,7 +812,7 @@ transition: all .3s;
 /* projects */
 
 .projects {
-height: max-content;
+height: fit-content;
 flex-shrink: 0;
 display: grid;
 place-items: center;
@@ -822,7 +822,7 @@ position: relative;
 }
 
 .projectstext {
-    height: 50px;
+    /* height: 50px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -965,7 +965,7 @@ overflow: hidden;
 .projectbtns {
     display: flex;
 width: 600px;
-height: 10%;
+height: 150px;
 justify-content: center;
 align-items: center;
 }

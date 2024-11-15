@@ -1256,7 +1256,7 @@ background-position: 0 60%;
 .projectcard21 .projectcardimg {
     width: 100%;
 align-self: stretch;
-background: url('');
+background: url('project-sec-img/img20.jpg');
 background-size: cover;
 }
 
@@ -1264,6 +1264,13 @@ background-size: cover;
     width: 100%;
 align-self: stretch;
 background: url('project-sec-img/img22.jpg');
+background-size: cover;
+}
+
+.projectcard23 .projectcardimg {
+    width: 100%;
+align-self: stretch;
+background: url('project-sec-img/img23.jpg');
 background-size: cover;
 }
 
@@ -1276,6 +1283,20 @@ background-position: center;
 background-size: cover;
 }
 
+.projectcard25 .projectcardimg {
+    width: 100%;
+align-self: stretch;
+background: url('project-sec-img/img19.jpg');
+background-position: center;
+background-size: cover;
+}
+.projectcard25 .projectcardimg {
+    width: 100%;
+align-self: stretch;
+background: url('project-sec-img/img26.jpg');
+background-position: center;
+background-size: cover;
+}
 
 .projectcard23 {
     height: calc(242px * 2.1);

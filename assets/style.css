@@ -819,6 +819,7 @@ place-items: center;
 
 background: #efefef;
 position: relative;
+padding: 2rem 0;
 }
 
 .projectstext {
@@ -1049,16 +1050,14 @@ transition: all .3s ease-in-out;
 
 
 @media screen and (max-width: 768px) {
-    .projects {
-        height: 1450px;
-    }
+    
 
     .projectstext{
         height: 100px;
         width: 100%;
         justify-content: center;
         align-items: center;
-transform: translateY(-50%);
+        transform: translateY(0);
 
     }
     .active {
@@ -1790,7 +1789,6 @@ line-height: normal;
 
 .flink {
     color: #FFF;
-    text-decoration: none;
     font-size: 17px;
     margin: 5px 0;
 }

@@ -54,7 +54,7 @@ body {
     height: 70px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     z-index: 12;
@@ -65,9 +65,11 @@ body {
     
 }
 
-.logo, .links, .langselect{
-    margin: 0 68.16px;
-}
+/* .logo, .links, .langselect{
+    margin: 0 70px;
+} */
+
+
 
 .link {
     color: var(--dark);
@@ -216,17 +218,14 @@ img.arrow-down {
 }
 
 @media screen and (max-width: 768px) {
-    .logo, .links, .langselect{
-        margin: 0 28.16px;
-    }
+   
     .herodesc {
         font-size: 35px;
-        margin-left: 0;
         width: 70%;
         text-align: center;
     }
     .primary {
-        font-size: 45px !important;
+        font-size: 45px;
     }
     .hero {
         background: linear-gradient(90deg, rgb(255, 255, 255) 30.58%, rgba(255, 255, 255, 0.00) 70.17%), url('img/hero.jpg'), lightgray 50% / cover no-repeat;
@@ -241,13 +240,8 @@ img.arrow-down {
     .links {
         display: none;
     }
-    .logo, .menu-btn{
-        margin: 0 10px;
-    }
     .menu-btn{
         display: block;
-        margin-right: 20px;
-        
     }
     .menu-btn i {
         color: #292E3D;
@@ -1916,7 +1910,6 @@ line-height: normal;
 
 .langselect {
  position: relative;
- margin-right: 100px;
 }
 
    .selected-lang {

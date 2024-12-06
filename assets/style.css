@@ -214,6 +214,8 @@ img.arrow-down {
 }
 
 .menu-btn {
+    height: 40px;
+    width: 40px;
     display: none;
 }
 

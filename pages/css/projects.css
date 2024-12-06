@@ -22,3 +22,28 @@ section.projects {
 .projectcard {
     border-radius: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .pages {
+        height: 75vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page {
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: fit-content;
+    }
+    .projectcard {
+        width: 150px;
+        height: 150px;
+    }
+    .projectbtns {
+        width: 100px;
+    }
+    .projectbtns {
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+    }
+}

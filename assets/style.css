@@ -217,7 +217,9 @@ img.arrow-down {
     height: 40px;
     width: 40px;
     display: none;
+    
 }
+
 
 @media screen and (max-width: 768px) {
    
@@ -243,7 +245,9 @@ img.arrow-down {
         display: none;
     }
     .menu-btn{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .menu-btn i {
         color: #292E3D;

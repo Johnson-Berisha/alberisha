@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/style.css">
     <title>Document</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
 </head>
 <body>
     <section class="header">
@@ -39,11 +40,15 @@
         <!-- mobile menu -->
         <div class="menu">
             <div class="menu-links">
-                <a href="#hero" onclick="openNav();" class="menu-link">Ballina</a>
-               <span><a href="pages/aboutus.html" onclick="openNav();" class="menu-link">Rreth Nesh</a> <div class="linkline"></div></span> 
-                <a href="#projects" onclick="openNav();" class="menu-link">Projektet</a>
-                <a href="#ser" onclick="openNav();" class="menu-link">Shërbimet tona</a>
-                <a href="#contact" onclick="openNav();" class="menu-link contactlink">Na Kontaktoni</a>
+                <a href="../index.html" class="menu-link">Ballina</a>
+
+               <a href="aboutus.html" class="menu-link">Rreth Nesh</a> 
+
+                <a href="projects.html"class="menu-link">Projektet</a>
+
+                <a href="services.html" class="menu-link">Shërbimet tona</a>
+
+                <a href="contact.html"class="menu-link" style="color: #fc3f3f;">Na Kontaktoni</a>
             </div>
             <div class="menu-btn">
                 <i class="gg-menu" style="color: white;" onclick="openNav();"></i>
@@ -61,5 +66,16 @@
             </svg>
         </div>
     </section>
+
+
+    <!-- javascript -->
+     <script>
+        const nav = document.querySelector('.menu');
+
+function openNav() {
+  nav.classList.toggle('open');
+}
+
+     </script>
 </body>
 </html>

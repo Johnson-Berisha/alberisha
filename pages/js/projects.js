@@ -68,3 +68,11 @@ function showSlides(n) {
 
   dots[slideIndex-1].className += " active";
 }
+
+// navbar
+
+const nav = document.querySelector('.menu');
+
+function openNav() {
+  nav.classList.toggle('open');
+}

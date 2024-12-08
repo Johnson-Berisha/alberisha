@@ -1380,67 +1380,7 @@ background-size: cover;
     grid-row: span 2;
 }
 
-/* To hide the checkbox */
-#checkboxInput {
-    display: none;
-    
-  }
-  
-  .toggleSwitch {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-    width: 50px;
-    height: 30px;
-    background-color: #e6e6e6;
-    border-radius: 20px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 2000;
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
-            border: 1px rgb(201, 201, 201) solid;
-  }
-  
-  .toggleSwitch::after {
-    content: "";
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    left: 5px;
-    background-color: rgba(255, 192, 19, 0.514);
-    border-radius: 50%;
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
-    -webkit-box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
-            box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
-    border: 5px solid rgb(255, 192, 19);
-  }
-  
-  #checkboxInput:checked+.toggleSwitch::after {
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
-    background-color: #485367;
-    border-color:#7a8392;
-  }
-  /* Switch background change */
-  #checkboxInput:checked+.toggleSwitch {
-    background-color: #202020;
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
-  }
+
   .custom-shape-divider-bottom-1689453058 {
     position: absolute;
     bottom: -1px;

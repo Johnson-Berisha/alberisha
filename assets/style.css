@@ -1479,7 +1479,6 @@ line-height: normal;
 
 .inputs, .secondinputs {
     display: flex;
-    margin-bottom: calc(430px - 205px * 2);
 }
 
 .nameinput input {
@@ -1586,11 +1585,10 @@ input:focus, textarea:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .nameinput {
     width: 305px;
-    margin-bottom: 10px;
   }
 
   .nameinput input {
@@ -1600,7 +1598,7 @@ input:focus, textarea:focus {
     border-radius: 5px;
   }
   textarea {
-    width: 304.885px;
+    width: 305px;
   }
   
 }
@@ -1608,7 +1606,7 @@ input:focus, textarea:focus {
 ::-webkit-input-placeholder {
     color: var(--primary);
     font-family: Work Sans;
-    font-size: 13.171px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1617,7 +1615,7 @@ input:focus, textarea:focus {
 :-ms-input-placeholder {
     color: var(--primary);
     font-family: Work Sans;
-    font-size: 13.171px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

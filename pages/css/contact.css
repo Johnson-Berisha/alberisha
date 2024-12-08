@@ -1,0 +1,9 @@
+label, input {
+    display: block;
+}
+
+label {
+    padding: 5px 0;
+    color: hsl(0, 0%, 20%);
+    font: 1rem/1.4em;
+}

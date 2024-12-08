@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../assets/style.css">
     <title>Document</title>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
     <section class="header">
@@ -80,30 +81,81 @@
             method="POST" class="form" autocomplete="off">
             <div class="inputs">
                 <div class="nameinput">
-                    <input type="text" placeholder="Emri..." name="name" id="name">
+                    <label for="name">Emri:</label>
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="phone">
-                    <input type="number" placeholder="Numri Telfonit..." name="phone" id="phone" required>
+                    <label for="phone">Numri Telfonit:</label>
+                    <input type="number" name="phone" id="phone" required>
                 </div>
                 
    
             </div>
             <div class="secondinputs">
                 <div class="nameinput">
-                    <input type="email" placeholder="Email-i..." name="name" id="name" required style="border-radius: 5px;">
+                    <label for="email">Email-i:</label>
+                    <input type="email" name="name" id="email" required style="border-radius: 5px;">
                 </div>
                 <div class="phone">
-                    <input type="address" placeholder="Address-a..." name="name" id="name" required style="border-radius: 5px;">
+                    <label for="address">Adresa:</label>
+                    <input type="address" name="name" id="address" required style="border-radius: 5px;">
                 </div>
             </div>
                 <div class="textarea">
-                    <textarea name="textarea" placeholder="Mesazhi..." id="textarea" cols="30" rows="10" style="resize: none;"></textarea>
+                    <label for="textarea">Mesazhi:</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" style="resize: none;"></textarea>
                 </div>
                 <div class="submit">
                     <button type="submit" onclick="sendEmail();"><span>Dergo</span> <i class="gg-mail"></i></button>
                 </div>
             </form>
         </div>
+    </section>
+    <section class="footer">
+        <div class="footertext">
+            <div class="lefttext">
+            Berisha A&L &copy; 2024. </div> 
+            <div class="righttext">
+            Të gjitha të drejtat e rezervuara
+            </div>
+        </div>
+        <div class="bigfooter">
+            <div class="bigfootersection fsec1">
+                <div class="fsectitle">
+                    Na kontaktoni
+                </div>
+                <div class="fseclinks">
+                    <span class="flink">049-602-044</span>
+                    <span class="flink">049-339-160</span>
+                    <span  class="flink">gjonsonberisha@gmail.com</span>
+                   
+
+                </div>
+            </div>
+            <div class="bigfootersection fsec2">
+                <div class="fsectitle">
+                    Komuniteti
+                </div>
+                <div class="fseclinks">
+                    <a href="" class="flink">Facebook</a>
+                    <a href="" class="flink">Vlerësimet</a>
+                  
+                </div>
+            </div>
+            <div class="bigfootersection fsec3">
+                <div class="fsectitle">
+                    Kompania jonë
+                </div>
+                <div class="fseclinks">
+                    <a href="../index.html" class="flink">Ballina</a>
+                    <a href="./aboutus.html" class="flink">Rreth Nesh</a>
+                    <a href="./projects.html" class="flink">Projektet</a>
+                    <a href="./services.html" class="flink">Shërbimet tona</a>
+                    <a href="./contact.html" class="flink">Na Kontaktoni</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 

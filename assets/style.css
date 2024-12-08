@@ -1477,7 +1477,7 @@ line-height: normal;
     text-align: center;
 }
 
-.inputs {
+.inputs, .secondinputs {
     display: flex;
     margin-bottom: calc(430px - 205px * 2);
 }
@@ -1580,7 +1580,7 @@ input:focus, textarea:focus {
     .contactform {
         display: block;
     }
-  .inputs {
+  .inputs, .secondinputs {
     width: 100%;
     height: 150px;
     flex-direction: column;
@@ -1589,7 +1589,7 @@ input:focus, textarea:focus {
     margin-bottom: 0;
   }
   .nameinput {
-    width: 304.885px;
+    width: 305px;
     margin-bottom: 10px;
   }
 

@@ -7,3 +7,9 @@ label {
     color: hsl(0, 0%, 20%);
     font: 1rem/1.4em;
 }
+ @media screen and (max-width: 768px) {
+    .nameinput input {
+        border-top-right-radius: 10px;
+        margin-bottom: 0;
+    }
+ }
